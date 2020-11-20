@@ -11,7 +11,7 @@ const journal = [
         id: 1,
         date: "10/08/2020",
         concept: "HTML & CSS",
-        entry: "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+        description: "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
         mood: "Ok"
     },
 
@@ -19,7 +19,7 @@ const journal = [
         id: 2,
         date: "11/18/2020",
         concept: "HTML & CSS",
-        entry: "We talked about how we can tranck our code errors using div tool.",
+        description: "We talked about how we can tranck our code errors using div tool.",
         mood: "Good"
     },
 
@@ -27,7 +27,7 @@ const journal = [
         id: 3,
         date: "11/19/2020",
         concept: "JavaScript, HTML & CSS",
-        entry: "We talked about JavaScript arrays and how they're used and build clean code",
+        description: "We talked about JavaScript arrays and how they're used and build clean code",
         mood: "In-between"
     }
 ]
