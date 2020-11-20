@@ -1,0 +1,34 @@
+
+.top_part {
+    display: flex;
+}
+
+.title__title {
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+.name {
+    /* margin-bottom: 30px; */
+    padding-bottom: 40px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    background-color: burlywood;
+}
+
+.theTitle {
+    border-bottom: solid 2px brown;
+    margin-left: 6px;
+}
+
+.submit_button {
+    color: blue;
+}
+
+body {
+    background-color: antiquewhite;
+}
