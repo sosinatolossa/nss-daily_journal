@@ -6,9 +6,11 @@
  */
 import { useJournalEntries, getEntries } from "./JournalDataProvider.js"
 import { JournalEntryComponent } from "./JournalEntry.js"
+import { entriesHTML } from "./form/JournalForm.js"
 
 // DOM reference to where all entries will be rendered
 const entryLog = document.querySelector(".journalEntries")
+const contentTarget = document.querySelector("main")
 
 export const EntryListComponent = () => {
     // Use the journal entry data from the data provider component
@@ -20,6 +22,9 @@ export const EntryListComponent = () => {
     })
 }
 
+contentTarget.addEventListener("journalStateChanged", () => {
+    EntryListComponent()
+})
 export const render = () => {
     let entries = useJournalEntries()
     for (const entry of entries) {
@@ -27,7 +32,7 @@ export const render = () => {
             Invoke the component that returns an
             HTML representation of a single entry
         */
-        entryLog.innerHTML += JournalEntryComponent(entry)
+       entryLog.innerHTML += JournalEntryComponent(entry)
          
     }
 }
